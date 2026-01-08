@@ -7,7 +7,7 @@ html {
     /* background-color: rgb(203, 241, 255); */
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
-    margin: 0 30px;
+    /* margin: 0 30px; */
 }
 
 body {
@@ -17,3 +17,62 @@ body {
   background-size: cover;
 }
 
+#drino_menu {
+    border: 1px solid darkolivegreen;
+	
+	display: grid;
+	grid-template-columns: 1fr 1fr 4fr 1fr 1fr;
+    grid-template-rows: 2fr .25fr 1fr;
+	/* gap: 5px; */
+    
+}
+    #drino_menu img {
+		width: 100%;
+		height: 100%;
+		transition: transform 1s ease-in-out;
+		
+	}
+    #blog-butt {
+		grid-row:1;
+		grid-column: 1 / span 2;
+	}
+
+	#game-butt {
+		grid-row: 3;
+		grid-column: 1;
+
+	}
+
+	#shop-butt {
+		grid-row: 1;
+		grid-column: 4 / span 2;
+	}
+
+	#home-butt {
+		grid-row: 3;
+		grid-column: 5;
+	}
+    
+.animate-butt:hover{
+        animation: rotateLink 3s forwards;
+    }
+
+    @keyframes rotateLink {
+        from {
+        
+            transform: rotate(0deg);
+        }
+        25%{
+            transform: rotate(-30deg);
+        }
+
+        50% {
+        
+            transform: rotate(30deg);
+        }
+        to {
+            
+            transform: rotate(0deg);
+        }
+   
+    }
