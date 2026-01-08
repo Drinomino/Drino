@@ -18,7 +18,7 @@ body {
 }
 
 #drino_menu {
-    border: 1px solid darkolivegreen;
+    /* border: 1px solid darkolivegreen; */
 	
 	display: grid;
 	grid-template-columns: 1fr 1fr 4fr 1fr 1fr;
@@ -76,3 +76,16 @@ body {
         }
    
     }
+
+.blog {
+  background-color: lightblue;
+  width: 100%;
+  height: 100%;
+  gap: 10px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center;     /* Centers vertically */
+  
+  overflow: scroll;
+}
