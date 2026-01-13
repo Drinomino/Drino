@@ -102,3 +102,9 @@ body {
     bottom:0px;
     left: 12%;
 }
+
+@media screen and (max-width: 650px) {
+ html{
+   font-size: 15px; 
+ }
+}
