@@ -52,6 +52,22 @@ body {
 		grid-row: 3;
 		grid-column: 5;
 	}
+
+    #blog{
+        grid-row: 1 / span 3;
+        grid-column: 3;
+        background-color: rgb(255, 255, 255);
+        gap: 10px;
+        height: 300px;
+        border-radius: 10px;
+        display: flex;
+        margin-top: 10%;
+        margin: 5%;
+        padding: 5%;
+        /* justify-content: center; Centers horizontally */
+        /* align-items: center;     Centers vertically */
+        overflow: scroll;
+    }
     
 .animate-butt:hover{
         animation: rotateLink 3s forwards;
@@ -80,7 +96,7 @@ body {
 .blog {
   background-color: rgb(255, 255, 255);
   width: 80%;
-  height: 150%;
+  height: 100%;
   gap: 10px;
   border-radius: 10px;
   display: flex;
