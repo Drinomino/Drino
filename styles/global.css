@@ -8,6 +8,7 @@ html {
     font-family: HeyCFont;
     font-size: 25px;
     /* margin: 0 30px; */
+    
 }
 
 body {
@@ -22,7 +23,7 @@ body {
 	
 	display: grid;
 	grid-template-columns: 1fr 1fr 4fr 1fr 1fr;
-    grid-template-rows: 2fr .25fr 1fr;
+    grid-template-rows: 2fr .25fr 1fr 1fr 1fr 1fr 1fr 1fr;
 	/* gap: 5px; */
     
 }
@@ -59,6 +60,7 @@ body {
 
     #blog {
         grid-row: 1 / span 3;
+        /* grid-row: 1 / span 3; */
 		grid-column: 3;
         background-color: rgb(255, 255, 255);
         overflow: scroll;
@@ -135,10 +137,36 @@ body {
     bottom:0px;
     left: 12%;
 }
-
+@media screen and (max-width: 800px){
+#blog {
+        grid-row: 1 / span 4;
+    }
+}
 @media screen and (max-width: 650px) {
  html{
    font-size: 15px; 
  }
+ #blog {
+        grid-row: 1 / span 5;
+    }
 
+}
+@media screen and (max-width: 450px){
+#blog {
+        grid-row: 1 / span 6;
+    }
+#drino_menu{
+    margin: 0;
+}
+}
+@media screen and (max-width: 350px){
+#blog {
+        grid-row: 1 / span 7;
+    }
+#drino_menu{
+    margin: 0;
+}
+html{
+   font-size: 10px; 
+ }
 }
