@@ -27,9 +27,6 @@ body {
 	/* gap: 5px; */
     
 }
-    .enter{
-        width: 50%;
-    }
 
     #drino_menu img {
 		width: 100%;
@@ -59,12 +56,12 @@ body {
 	}
 
     #blog {
-        grid-row: 1 / span 3;
+        grid-row: 1 / span 4;
         /* grid-row: 1 / span 3; */
 		grid-column: 3;
         background-color: rgb(255, 255, 255);
         overflow: scroll;
-        height: 400px;
+        height: 500px;
         border-radius: 10px;
         gap: 10px;
         margin-top: 10%; 
@@ -72,6 +69,10 @@ body {
         margin-right: 2%;
         padding: 5%;
     }
+        #blog img{
+            width: 100%;
+            height: auto;
+        }
 
     /* #blog{
         grid-row: 1 / span 3;
@@ -131,6 +132,14 @@ body {
         width: 20%;
     }
 
+.enter{
+    display: block;
+    margin: auto;
+    margin-top: 100px;
+    width: 50%;
+    
+}
+
 .indexPup{
     width: 75%;
     position:fixed;
@@ -141,6 +150,7 @@ body {
 #blog {
         grid-row: 1 / span 4;
     }
+    
 }
 @media screen and (max-width: 650px) {
  html{
@@ -149,6 +159,9 @@ body {
  #blog {
         grid-row: 1 / span 5;
     }
+#drino_menu{
+    margin: 0;
+}
 
 }
 @media screen and (max-width: 450px){
@@ -170,3 +183,15 @@ html{
    font-size: 10px; 
  }
 }
+@media screen and (max-width: 350px){
+#blog {
+        grid-row: 1 / span 8;
+    }
+#drino_menu{
+    margin: 0;
+}
+html{
+   font-size: 10px; 
+ }
+}
+
