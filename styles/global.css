@@ -29,20 +29,20 @@ body {
     transform: scale(1.1);
     /* filter: drop-shadow(0 5px 15px rgba(255, 255, 255, 0.3)); */
 }
-.cross {
-    width: 8%;
-    top: 30%;
-    left: 12%;
+.shop {
+    width: 25%;
+    top: 10%;
+    left: 22%;
 }
 
 .incense-box {
-    width: 10%;
-    top: 29%;
-    left: 36%;
+    width: 25%;
+    top: 25%;
+    left: 40%;
 }
 
 .rosary-1 {
-    width: 10%;
+    width: 22%;
     top: 30%;
     left: 50%;
 }
@@ -161,14 +161,6 @@ body {
         width: 20%;
     }
 
-.enter{
-    display: block;
-    margin: auto;
-    margin-top: 100px;
-    width: 50%;
-    
-}
-
 .drinosplash{
     width: 25%;
     position:fixed;
@@ -176,49 +168,49 @@ body {
     right: 0px;
 }
 @media screen and (max-width: 800px){
-#blog {
-        grid-row: 1 / span 4;
-    }
+
     
 }
 @media screen and (max-width: 650px) {
  html{
    font-size: 15px; 
- }
- #blog {
-        grid-row: 1 / span 5;
-    }
-#drino_menu{
-    margin: 0;
+ 
 }
 
 }
 @media screen and (max-width: 450px){
-#blog {
-        grid-row: 1 / span 6;
-    }
-#drino_menu{
-    margin: 0;
+
+.item:hover {
+    transform: scale(1.1);
+    /* filter: drop-shadow(0 5px 15px rgba(255, 255, 255, 0.3)); */
+}
+.shop {
+    width: 40%;
+    top: 10%;
+    left: 22%;
+}
+
+.incense-box {
+    width: 40%;
+    top: 30%;
+    left: 34%;
+}
+
+.rosary-1 {
+    width: 30%;
+    top: 43%;
+    left: 25%;
 }
 }
 @media screen and (max-width: 350px){
-#blog {
-        grid-row: 1 / span 7;
-    }
-#drino_menu{
-    margin: 0;
-}
+
 html{
    font-size: 10px; 
  }
+ 
 }
 @media screen and (max-width: 350px){
-#blog {
-        grid-row: 1 / span 8;
-    }
-#drino_menu{
-    margin: 0;
-}
+
 html{
    font-size: 10px; 
  }
