@@ -12,19 +12,48 @@ html {
 }
 
 body {
- background-image: url('../Images/background.png');
+ background-image: url('../Images/background-purp-dots.png');
   background-repeat: no-repeat;
   background-attachment: fixed; 
   background-size: cover;
 }
+.item {
+    position: absolute;
+    width: auto;
+    height: auto;
+    transition: transform 0.3s ease;
+    pointer-events: auto;
+}
 
-#drino_menu {
-    /* border: 1px solid darkolivegreen; */
+.item:hover {
+    transform: scale(1.1);
+    /* filter: drop-shadow(0 5px 15px rgba(255, 255, 255, 0.3)); */
+}
+.cross {
+    width: 8%;
+    top: 30%;
+    left: 12%;
+}
+
+.incense-box {
+    width: 10%;
+    top: 29%;
+    left: 36%;
+}
+
+.rosary-1 {
+    width: 10%;
+    top: 30%;
+    left: 50%;
+}
+
+/* #drino_menu {
+   
 	
 	display: grid;
 	grid-template-columns: 1fr 1fr 4fr 1fr 1fr;
     grid-template-rows: 2fr .25fr 1fr 1fr 1fr 1fr 1fr 1fr;
-	/* gap: 5px; */
+	
     
 }
 
@@ -57,7 +86,7 @@ body {
 
     #blog {
         grid-row: 1 / span 4;
-        /* grid-row: 1 / span 3; */
+       
 		grid-column: 3;
         background-color: rgb(255, 255, 255);
         overflow: scroll;
@@ -72,7 +101,7 @@ body {
         #blog img{
             width: 100%;
             height: auto;
-        }
+        } */
 
     /* #blog{
         grid-row: 1 / span 3;
@@ -140,11 +169,11 @@ body {
     
 }
 
-.indexPup{
-    width: 75%;
+.drinosplash{
+    width: 25%;
     position:fixed;
-    bottom:0px;
-    left: 12%;
+    top:0px;
+    right: 0px;
 }
 @media screen and (max-width: 800px){
 #blog {
