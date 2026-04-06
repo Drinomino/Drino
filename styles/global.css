@@ -17,6 +17,27 @@ body {
   background-attachment: fixed; 
   background-size: cover;
 }
+
+/* .altar-scene {
+    position: relative;
+    max-width: 1200px;
+    width: 100%;
+} */
+.altar-container {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+}
+.shelf-items {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
 .item {
     position: absolute;
     width: auto;
@@ -30,21 +51,21 @@ body {
     /* filter: drop-shadow(0 5px 15px rgba(255, 255, 255, 0.3)); */
 }
 .shop {
-    width: 25%;
+    width: 24%;
     top: 10%;
     left: 22%;
 }
 
 .incense-box {
-    width: 25%;
-    top: 25%;
+    width: 22%;
+    top: 49%;
     left: 40%;
 }
 
 .rosary-1 {
-    width: 22%;
-    top: 30%;
-    left: 50%;
+    width: 20%;
+    top: 28%;
+    left: 54%;
 }
 
 /* #drino_menu {
@@ -148,12 +169,16 @@ body {
   height: 500px;
   gap: 10px;
   border-radius: 10px;
-  display: flex;
+  /* display: flex; */
   margin-top: 10%;
   margin-left: 5%;
   padding: 5%;
-  /* justify-content: center; Centers horizontally */
-  /* align-items: center;     Centers vertically */
+
+  /* Centers horizontally */
+  justify-content: center; 
+
+   /* Centers vertically */
+  align-items: center;    
   
   overflow: scroll;
 }
@@ -167,40 +192,55 @@ body {
     top:0px;
     right: 0px;
 }
-@media screen and (max-width: 800px){
-
-    
+.pupsplash{
+    width: 15%;
+    position:fixed;
+    bottom:0px;
+    left: 0px;
 }
+.back-butt{
+    width: 15%;
+    position:fixed;
+    top:0px;
+    left: 0px;
+}
+
 @media screen and (max-width: 650px) {
  html{
    font-size: 15px; 
  
 }
-
-}
-@media screen and (max-width: 450px){
-
-.item:hover {
-    transform: scale(1.1);
-    /* filter: drop-shadow(0 5px 15px rgba(255, 255, 255, 0.3)); */
-}
 .shop {
-    width: 40%;
-    top: 10%;
-    left: 22%;
+    width: 34%;
 }
 
 .incense-box {
-    width: 40%;
-    top: 30%;
-    left: 34%;
+    width: 32%;
+    left: 36%;
 }
 
 .rosary-1 {
     width: 30%;
-    top: 43%;
-    left: 25%;
+    top: 33%;
 }
+
+}
+@media screen and (max-width: 380px){
+.shop {
+    width: 46%;
+    left: 15%;
+}
+
+.incense-box {
+    width: 44%;
+    left: 29%;
+}
+
+.rosary-1 {
+    width: 42%;
+    left: 52%;
+}
+
 }
 @media screen and (max-width: 350px){
 
