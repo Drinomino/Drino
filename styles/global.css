@@ -8,7 +8,7 @@ html {
     font-family: HeyCFont;
     font-size: 25px;
     /* margin: 0 30px; */
-    
+    cursor: url("../Images/ant.png"), auto;
 }
 
 body {
@@ -17,7 +17,7 @@ body {
   background-attachment: fixed; 
   background-size: cover;
 
-  cursor: url("../Images/ant.png"), auto;
+  
 }
 
 /* .altar-scene {
