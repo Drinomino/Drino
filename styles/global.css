@@ -199,7 +199,7 @@ body {
     right: 0px;
 }
 .pupsplash{
-    width: 15%;
+    width: 17%;
     position:fixed;
     bottom:0px;
     left: 0px;
@@ -207,9 +207,15 @@ body {
 .back-butt{
     width: 10%;
     position:fixed;
-    top:0px;
-    left: 0px;
+    top:2%;
+    left: 2%;
+    transition: transform 0.3s ease;
 }
+    .back-butt:hover {
+    transform: scale(1.1);
+    /* filter: drop-shadow(0 5px 15px rgba(255, 255, 255, 0.3)); */
+}
+
 
 @media screen and (max-width: 650px) {
  html{
