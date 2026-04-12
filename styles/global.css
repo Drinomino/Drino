@@ -193,6 +193,11 @@ body {
         width: 100%;
         height: auto;
     }
+    .blog video{
+        width: 50%;
+        height: auto;
+        margin-left: 25%;
+    }
 
 .drinosplash{
     width: 25%;
