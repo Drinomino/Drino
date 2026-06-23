@@ -11,21 +11,53 @@ html {
     cursor: url("../Images/ant.png"), auto;
 }
 
-body {
- background-image: url('../Images/background-purp-dots.png');
+body{
+ /* background-image: url('../Images/camp/sky.png');
   background-repeat: no-repeat;
   background-attachment: fixed; 
-  background-size: cover;
-
-  
+  background-size: cover; */
 }
 
-/* .altar-scene {
-    position: relative;
-    max-width: 1200px;
-    width: 100%;
-} */
-.altar-container {
+a {
+    text-decoration: none;
+    color: rgb(59, 178, 41);
+}
+
+
+h1 {
+
+    font-size: 4em;
+    color: rgb(27, 128, 46);
+    /* font-family: Arial Rounded MT Bold; */
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+    h1 :hover{
+        color: rgb(27, 128, 46);
+        text-decoration: none;
+    }
+
+.projlogo{
+     width: 30%;
+     padding:0%;
+}
+
+.projicon{
+    width: 10%;
+}
+.snow-back{
+    width: 10%;
+    position:fixed;
+    bottom:2px;
+    left: 2%;
+}
+
+.sign-container {
     position: relative;
     width: 100%;
     height: 600px;
@@ -53,144 +85,138 @@ body {
     /* filter: drop-shadow(0 5px 15px rgba(255, 255, 255, 0.3)); */
 }
 .shop {
-    width: 24%;
-    top: 10%;
-    left: 22%;
+    width: 20%;
+    top: -15px;
+    left: 10%;
+    
 }
+    .shop:hover{
+     animation: myAnim 1s ease 0s 1 normal forwards;
+    }
+
 
 .blog-butt {
-    width: 22%;
-    top: 49%;
-    left: 40%;
+    width: 20%;
+    top: 10%;
+    right: 2%;
+}
+    .blog-butt:hover {
+    animation: shakeAnim 1s ease 0s 1 normal forwards;
 }
 
 .game-butt {
     width: 20%;
-    top: 28%;
-    left: 54%;
+    top: 40%;
+    right: 2%;
+}
+    .game-butt:hover {
+        animation: jelloAnim 1s ease 0s 1 normal forwards;
+    }
+
+@keyframes jelloAnim {
+	0% {
+		transform: scale3d(1, 1, 1);
+	}
+
+	30% {
+		transform: scale3d(1.25, 0.75, 1);
+	}
+
+	40% {
+		transform: scale3d(0.75, 1.25, 1);
+	}
+
+	50% {
+		transform: scale3d(1.15, 0.85, 1);
+	}
+
+	65% {
+		transform: scale3d(0.95, 1.05, 1);
+	}
+
+	75% {
+		transform: scale3d(1.05, 0.95, 1);
+	}
+
+	100% {
+		transform: scale3d(1, 1, 1);
+	}
+}
+    
+@keyframes shakeAnim {
+	0%,
+	100% {
+		transform: rotate(0deg);
+		transform-origin: 100% 50%;
+	}
+
+	10% {
+		transform: rotate(2deg);
+	}
+
+	20%,
+	40%,
+	60% {
+		transform: rotate(-4deg);
+	}
+
+	30%,
+	50%,
+	90% {
+		transform: rotate(0deg);
+	}
+
 }
 
-/* #drino_menu {
-   
-	
-	display: grid;
-	grid-template-columns: 1fr 1fr 4fr 1fr 1fr;
-    grid-template-rows: 2fr .25fr 1fr 1fr 1fr 1fr 1fr 1fr;
-	
-    
+@keyframes myAnim {
+	0%,
+	100% {
+		transform: translateX(0%);
+		transform-origin: 50% 50%;
+	}
+
+	15% {
+		transform: translateX(-30px) rotate(6deg);
+	}
+
+	30% {
+		transform: translateX(15px) rotate(-6deg);
+	}
+
+	45% {
+		transform: translateX(-15px) rotate(3.6deg);
+	}
+
+	60% {
+		transform: translateX(9px) rotate(-2.4deg);
+	}
+
+	75% {
+		transform: translateX(-6px) rotate(1.2deg);
+	}
 }
 
-    #drino_menu img {
-		width: 100%;
-		height: 100%;
-		transition: transform 1s ease-in-out;
-		
-	}
-    #blog-butt {
-		grid-row:1;
-		grid-column: 1 / span 2;
-	}
-
-	#game-butt {
-		grid-row: 3;
-		grid-column: 1;
-
-	}
-
-	#shop-butt {
-		grid-row: 1;
-		grid-column: 4 / span 2;
-	}
-
-	#home-butt {
-		grid-row: 3;
-		grid-column: 5;
-	}
-
-    #blog {
-        grid-row: 1 / span 4;
-       
-		grid-column: 3;
-        background-color: rgb(255, 255, 255);
-        overflow: scroll;
-        height: 500px;
-        border-radius: 10px;
-        gap: 10px;
-        margin-top: 10%; 
-        margin-left: 2%;
-        margin-right: 2%;
-        padding: 5%;
-    }
-        #blog img{
-            width: 100%;
-            height: auto;
-        } */
-
-    /* #blog{
-        grid-row: 1 / span 3;
-        grid-column: 3;
-        background-color: rgb(255, 255, 255);
-        gap: 10px;
-        
-        border-radius: 10px;
-        display: flex;
-        margin-top: 10%;
-        margin: 5%;
-        padding: 2%;
-       
-        overflow: scroll;
-    } */
-    
-.animate-butt:hover{
-        animation: rotateLink 3s forwards;
-    }
-
-    @keyframes rotateLink {
-        from {
-        
-            transform: rotate(0deg);
-        }
-        25%{
-            transform: rotate(-30deg);
-        }
-
-        50% {
-        
-            transform: rotate(30deg);
-        }
-        to {
-            
-            transform: rotate(0deg);
-        }
-   
-    }
 .center {
     max-width: fit-content;
   margin-left: auto;
   margin-right: auto;
 }
+
 .blog {
-  background-color: rgb(255, 255, 255);
-  width: 70%;
-  height: 500px;
+ 
+  width: 50%;
+  height: 220px;
   gap: 10px;
   border-radius: 10px;
   /* display: flex; */
-  margin-top: 5%;
-  margin-left: 10%;
+  margin-top: 9%;
+  margin-left: 20%;
   padding: 5%;
- 
-
-  /* Centers horizontally */
-  /* justify-content: center;  */
-
-   /* Centers vertically */
-  /* align-items: center;     */
-  
   overflow: scroll;
 }
+
     .blog img{
-        width: 100%;
+        width: 90%;
         height: auto;
     }
     .blog video{
@@ -198,6 +224,14 @@ body {
         height: auto;
         margin-left: 25%;
     }
+.blog-image{
+    width: 60%;
+    height: 100%;
+    position: absolute;
+    left: 20%;
+    top: 0px;
+    z-index: -1;
+}
 
 .drinosplash{
     width: 15%;
@@ -206,13 +240,13 @@ body {
     right: 0px;
 }
 .pupsplash{
-    width: 17%;
+    width: 20%;
     position:fixed;
     bottom:0px;
-    left: 0px;
+    right: 10%;
 }
 .back-butt{
-    width: 10%;
+    width: 16%;
     position:fixed;
     top:2%;
     left: 2%;
@@ -222,6 +256,27 @@ body {
     transform: scale(1.1);
     /* filter: drop-shadow(0 5px 15px rgba(255, 255, 255, 0.3)); */
 }
+
+.proj{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;  
+}
+
+.proj img{
+    /* width: 32%;
+   max-width: 600px; */
+   padding: 2%;
+   height: 30vw;
+   max-height: 600px;
+
+}
+    .proj video{
+    width: 32%;
+    height: auto;
+    }
 
 
 @media screen and (max-width: 650px) {
@@ -233,42 +288,48 @@ body {
     width: 34%;
 }
 
-.incense-box {
-    width: 32%;
-    left: 36%;
+.blog-butt {
+    width: 34%;
+    
 }
 
-.rosary-1 {
-    width: 30%;
-    top: 33%;
-}
-
-}
-@media screen and (max-width: 380px){
-.shop {
-    width: 46%;
-    left: 15%;
-}
-
-.incense-box {
-    width: 44%;
-    left: 29%;
-}
-
-.rosary-1 {
-    width: 42%;
-    left: 52%;
+.game-butt {
+    width: 34%;
+    
 }
 
 }
-@media screen and (max-width: 350px){
+
+@media screen and (max-width: 1050px){
 
 html{
    font-size: 10px; 
  }
- 
+ .blog {
+  height: 310px;
+  
+}
+}
+@media screen and (max-width: 770px){
+
+ .blog {
+  height: 350px;
+  margin-top: 15%;
+}
+.proj img{
+    height: 40vw;
+}
+
 }
 @media screen and (max-width: 350px){
+
+ .blog {
+  height: 380px;
+  margin-top: 30%;
+}
+.proj img{
+    height: 80vw;
+}
 
 html{
    font-size: 10px; 
