@@ -279,26 +279,6 @@ h1 {
     }
 
 
-@media screen and (max-width: 650px) {
- html{
-   font-size: 15px; 
- 
-}
-.shop {
-    width: 34%;
-}
-
-.blog-butt {
-    width: 34%;
-    
-}
-
-.game-butt {
-    width: 34%;
-    
-}
-
-}
 
 @media screen and (max-width: 1050px){
 
@@ -321,11 +301,42 @@ html{
 }
 
 }
+@media screen and (max-width: 650px) {
+ html{
+   font-size: 15px; 
+ 
+}
+.shop {
+    width: 34%;
+}
+
+.blog-butt {
+    width: 34%;
+    
+}
+
+.game-butt {
+    width: 34%;
+    
+}
+ .blog {
+  height: 350px;
+  margin-top: 20%;
+}
+
+@media screen and (max-width: 500px){
+
+.blog {
+  
+  margin-top: 25%;
+}
+}
+}
 @media screen and (max-width: 350px){
 
  .blog {
   height: 380px;
-  margin-top: 30%;
+  margin-top: 35%;
 }
 .proj img{
     height: 80vw;
@@ -334,5 +345,14 @@ html{
 html{
    font-size: 10px; 
  }
+}
+
+@media screen and (max-width: 290px){
+   
+.blog {
+  height: 380px;
+  margin-top: 45%;
+}
+
 }
 
