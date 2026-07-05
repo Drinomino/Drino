@@ -43,8 +43,12 @@ h1 {
     }
 
 .projlogo{
-     width: 30%;
+     width: 50%;
      padding:0%;
+     transition: transform .5s ease-in-out;
+}
+.projlogo:hover {
+    transform: scale(110%);
 }
 
 .projicon{
