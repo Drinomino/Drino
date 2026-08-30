@@ -217,7 +217,11 @@ h1 {
   margin-left: 20%;
   padding: 5%;
   overflow: scroll;
+  
 }
+    .blog::-webkit-scrollbar {
+    display: none;
+    }
 
     .blog img{
         width: 90%;
